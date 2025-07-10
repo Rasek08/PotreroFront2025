@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,97 +7,121 @@
 }
 
 body {
-  background-color: #383838;
-  padding: 0 400px;
+  background-color: #474747;
+  padding: 0 300px;
 }
 
-h1 {
-    height: 200px;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 800;
-    color: #f53900;
-    background-image: url(../img/fondo-spaghetti.webp);
-    background-size: 45%;
-    text-decoration: underline;
-    text-shadow: 0px 4px 4px rgb(112, 112, 112);
-} 
+colores{
+color: #c7011a;
+color: #f2531b;
+color: #47bb02;
+color: #015001;
+color: #030301;}
+
+/* ----- HEADER  ----- */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+h1{
+  color: #c7011a;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-shadow: rgb(0, 0, 0) 5px 5px 10px;
+}
 
 .menu{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 20px;
-}
-nav ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  list-style: none;
   padding: 20px;
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
 nav a {
-  color: #ff5b32;
+  padding: 25px;
+  color: #ff5429;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 1.2rem;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #ca2800;
+  color: #c52700;
   text-decoration: underline;
 }
 
 section{
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
-p {
-    font-size: 20px;
-    margin: 1rem 1rem;
+p{
+  font-size: 20px;
+  margin: 1rem 1rem;
 }
 
 .Bolonia {
-    font-size: 35px;
-    text-align: center;
+  font-size: 35px;
+  text-align: center;
 }
 .mapa {
-    width: 700px;
-    height: 360px;
-    display: block;
-    margin: auto;}
+  width: 700px;
+  height: 360px;
+  display: block;
+  margin: auto;}
 
 h2{
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .img{display: block;
-     margin: auto;
-     width: 700px;
+  margin: auto;
+  width: 700px;
 }
 
 h3{
-    font-size: 40px;
-    text-decoration: underline;
-    margin: 2rem 0;
+  font-size: 40px;
+  text-decoration: underline;
+  margin: 2rem 0;
 }
 
+.RECETA ol, .RECETA ul {
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+
 .musica{
-    margin: 1rem 0;
-    text-align: center;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 audio{
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 .tutorial{
-    display: block;
-    margin: auto;
+  display: block;
+  margin: auto;
 }
 
 ul, ol{font-size: 18px;}
@@ -121,21 +145,28 @@ ul, ol{font-size: 18px;}
 }
 
 /* ------ FOOTER -----*/
-footer{
-    margin-top: 3rem;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 1rem 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.social-icons {
+.redes-iconos {
   display: flex;
   justify-content: center;
   gap: 15px;
   padding: 10px;
 }
 
-.social-icons img {
+.redes-iconos img {
   transition: transform 0.2s ease;
 }
 
-.social-icons img:hover {
+.redes-iconos img:hover {
   transform: scale(1.2);
 }
